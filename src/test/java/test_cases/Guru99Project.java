@@ -98,47 +98,57 @@ public class Guru99Project {
 
     }
 
-    @Test(priority = 5)
-    @Description("Edit a account, not working, getting 500.")
-    public void editAcc() throws InterruptedException {
+//    @Test(priority = 5)
+//    @Description("Edit an account, not working, getting 500.")
+//    public void editAcc() throws InterruptedException {
+//
+//        EditAccount edit_acc = new EditAccount(driver);
+//        edit_acc.editAccount();
+//
+//
+//    }
+//
+//    @Test(priority = 6)
+//    @Description("Delete an account, not working, getting 500.")
+//    public void deleteAccount() throws InterruptedException {
+//
+//        DeleteAccount del_acc = new DeleteAccount(driver);
+//        del_acc.deleteAccount();
+//
+//
+//    }
+//
+//    @Test(priority = 7)
+//    @Description("Deposit in New Account, not working, getting 500.")
+//    public void deposit() throws InterruptedException {
+//
+//        Deposit deposit_acc = new Deposit(driver);
+//        deposit_acc.depositAmount();
+//
+//
+//    }
+//
+//    @Test(priority =8 )
+//    @Description("Withdrawal from New Account.")
+//    public void withdrawal() throws InterruptedException {
+//
+//       Withdrawal withdrawal_acc = new Withdrawal(driver);
+//       withdrawal_acc.withdrawal_amount();
+//
+//
+//    }
 
-        EditAccount edit_acc = new EditAccount(driver);
-        edit_acc.editAccount();
+    @Test(priority =9 )
+    @Description("Fund Transfer between two Accounts.")
+    public void fundTransfer() throws InterruptedException {
+
+       Fund_Transfer fund_transfer = new Fund_Transfer(driver);
+       fund_transfer.fundTransfer();
 
 
     }
 
-    @Test(priority = 6)
-    @Description("Delete a account, not working, getting 500.")
-    public void deleteAccount() throws InterruptedException {
-
-        DeleteAccount del_acc = new DeleteAccount(driver);
-        del_acc.deleteAccount();
-
-
-    }
-
-    @Test(priority = 7)
-    @Description("Deposit in New Account, not working, getting 500.")
-    public void deposit() throws InterruptedException {
-
-        Deposit deposit = new Deposit(driver);
-        deposit.depositAmount();
-
-
-    }
-
-    @Test(priority =8 )
-    @Description("Withdrawal from New Account.")
-    public void withdrawal() throws InterruptedException {
-
-       Withdrawal withdrawal = new Withdrawal(driver);
-       withdrawal.withdrawal_amount();
-
-
-    }
-
-    @Test(priority = 9)
+    @Test(priority = 10)
     @Description("Logout")
     public void logout() throws InterruptedException {
 

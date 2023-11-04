@@ -61,7 +61,7 @@ public class NewAccountAdd extends BasePage{
         // Select by index
       //  dropdown.selectByIndex(2);
 
-        init_deposit_amount.sendKeys("1000");
+        init_deposit_amount.sendKeys("2000");
         Thread.sleep(2000);
         submit_btn.click();
         Thread.sleep(2000);
