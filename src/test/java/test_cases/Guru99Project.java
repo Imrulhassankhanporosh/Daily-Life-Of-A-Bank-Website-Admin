@@ -99,7 +99,7 @@ public class Guru99Project {
     }
 
     @Test(priority = 5)
-    @Description("Edit a account")
+    @Description("Edit a account, not working, getting 500.")
     public void editAcc() throws InterruptedException {
 
         EditAccount edit_acc = new EditAccount(driver);
@@ -108,15 +108,15 @@ public class Guru99Project {
 
     }
 
-//    @Test(priority = 6)
-//    @Description("Delete a account")
-//    public void deleteCustomer() throws InterruptedException {
-//
-//        DeleteCustomer del_cus = new DeleteCustomer(driver);
-//        del_cus.deleteCustomer();
-//
-//
-//    }
+    @Test(priority = 6)
+    @Description("Delete a account, not working, getting 500.")
+    public void deleteAccount() throws InterruptedException {
+
+        DeleteAccount del_acc = new DeleteAccount(driver);
+        del_acc.deleteAccount();
+
+
+    }
 //
 //    @Test(priority = 3)
 //    @Description("Delete a customer")
