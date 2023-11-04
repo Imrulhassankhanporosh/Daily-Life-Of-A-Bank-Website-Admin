@@ -31,6 +31,8 @@ public class LoginPage extends BasePage {
         Thread.sleep(2000);
         login_btn.click();
         Thread.sleep(2000);
+
+        System.out.println("Login Completed.");
         
         
 

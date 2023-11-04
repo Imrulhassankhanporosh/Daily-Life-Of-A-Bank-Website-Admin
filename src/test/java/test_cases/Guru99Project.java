@@ -1,8 +1,6 @@
 package test_cases;
 
-import action_pages.LoginPage;
-import action_pages.MouseHover;
-import action_pages.NewCustomerAdd;
+import action_pages.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import jdk.jfr.Description;
 import org.openqa.selenium.WebDriver;
@@ -60,12 +58,32 @@ public class Guru99Project {
 
     }
 
-    @Test(priority = 2)
-    @Description("Mouse action test by selecting dropdown options from dashboard")
-    public void mouseHover() throws InterruptedException {
+//    @Test(priority = 2)
+//    @Description("Mouse action test by selecting dropdown options from dashboard")
+//    public void mouseHover() throws InterruptedException {
+//
+//        MouseHover mh = new MouseHover(driver);
+//        mh.mouseAction();
+//
+//
+//    }
 
-        MouseHover mh = new MouseHover(driver);
-        mh.mouseAction();
+    @Test(priority = 2)
+    @Description("Edit a customer")
+    public void editCustomer() throws InterruptedException {
+
+        EditCustomer edit_cus = new EditCustomer(driver);
+        edit_cus.editCustomer();
+
+
+    }
+
+    @Test(priority = 3)
+    @Description("Delete a customer")
+    public void deleteCustomer() throws InterruptedException {
+
+        DeleteCustomer del_cus = new DeleteCustomer(driver);
+        del_cus.deleteCustomer();
 
 
     }

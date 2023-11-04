@@ -5,6 +5,9 @@ import org.openqa.selenium.support.FindBy;
 
 public class NewCustomerAdd extends BasePage {
 
+   // String C_id;
+    public static String C_id;
+
     @FindBy(linkText = "New Customer")
     WebElement new_cus_option_from_dashboard;
     @FindBy(name="name")
@@ -100,11 +103,31 @@ public class NewCustomerAdd extends BasePage {
         Thread.sleep(2000);
         submit_btn.click();
         Thread.sleep(2000);
-        String C_id = customer_id.getText();
+
+        //  Alert Case handle
+        try {
+            Alert alert = driver.switchTo().alert();
+            //alert.dismiss();
+            alert.accept();
+        }
+        catch (NoAlertPresentException e){
+            System.out.println("Alert was not present: " + e.getMessage());
+        }
+        Thread.sleep(2000);
+
+        System.out.println("New Customer Added.");
+
+        C_id = customer_id.getText();
         System.out.println(C_id);
 
 
 
+
+    }
+
+    public static String getCustomerID(){
+
+        return C_id;
     }
 
 }
