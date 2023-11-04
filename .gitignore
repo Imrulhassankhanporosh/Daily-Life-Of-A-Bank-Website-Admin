@@ -15,6 +15,7 @@ target/
 .idea/vcs.xml
 .idea/misc.xml
 .idea/.gitignore
+.idea/uiDesigner.xml
 
 ### Eclipse ###
 .apt_generated

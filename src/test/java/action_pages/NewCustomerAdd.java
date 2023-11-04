@@ -79,27 +79,27 @@ public class NewCustomerAdd extends BasePage {
 
 
 
-        name.sendKeys("Ema Khan");
+        name.sendKeys("Emily Khan");
         Thread.sleep(2000);
         gender.click();
         Thread.sleep(2000);
-        dob.sendKeys("06/10/1998");
+        dob.sendKeys("06/10/1997");
         Thread.sleep(2000);
         address.sendKeys("Some where in the worlds");
         Thread.sleep(2000);
-        city.sendKeys("XYZAV");
+        city.sendKeys("XYZABC");
         Thread.sleep(2000);
-        state.sendKeys("ABCXY");
+        state.sendKeys("ABCXYZ");
         Thread.sleep(2000);
-        pin.sendKeys("102040");
+        pin.sendKeys("102030");
         Thread.sleep(2000);
-        mobile_no.sendKeys("01716661626");
+        mobile_no.sendKeys("01716661620");
         Thread.sleep(2000);
-        String email_id = "Test" + System.currentTimeMillis() + "@xyz.com";
+        String email_id = "Test" + System.currentTimeMillis() + "@acr.com";
         Thread.sleep(2000);
         email.sendKeys(email_id);
         Thread.sleep(2000);
-        password.sendKeys("hello@123");
+        password.sendKeys("gello@123");
         Thread.sleep(2000);
         submit_btn.click();
         Thread.sleep(2000);

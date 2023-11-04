@@ -117,36 +117,36 @@ public class Guru99Project {
 
 
     }
-//
-//    @Test(priority = 3)
-//    @Description("Delete a customer")
-//    public void deleteCustomer() throws InterruptedException {
-//
-//        DeleteCustomer del_cus = new DeleteCustomer(driver);
-//        del_cus.deleteCustomer();
-//
-//
-//    }
-//
-//    @Test(priority = 3)
-//    @Description("Delete a customer")
-//    public void deleteCustomer() throws InterruptedException {
-//
-//        DeleteCustomer del_cus = new DeleteCustomer(driver);
-//        del_cus.deleteCustomer();
-//
-//
-//    }
-//
-//    @Test(priority = 3)
-//    @Description("Delete a customer")
-//    public void deleteCustomer() throws InterruptedException {
-//
-//        DeleteCustomer del_cus = new DeleteCustomer(driver);
-//        del_cus.deleteCustomer();
-//
-//
-//    }
+
+    @Test(priority = 7)
+    @Description("Deposit in New Account, not working, getting 500.")
+    public void deposit() throws InterruptedException {
+
+        Deposit deposit = new Deposit(driver);
+        deposit.depositAmount();
+
+
+    }
+
+    @Test(priority =8 )
+    @Description("Withdrawal from New Account.")
+    public void withdrawal() throws InterruptedException {
+
+       Withdrawal withdrawal = new Withdrawal(driver);
+       withdrawal.withdrawal_amount();
+
+
+    }
+
+    @Test(priority = 9)
+    @Description("Logout")
+    public void logout() throws InterruptedException {
+
+        LogOut logout = new LogOut(driver);
+        logout.logout();
+
+
+    }
 
 
     @AfterTest
