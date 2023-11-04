@@ -68,25 +68,85 @@ public class Guru99Project {
 //
 //    }
 
-    @Test(priority = 2)
-    @Description("Edit a customer")
-    public void editCustomer() throws InterruptedException {
+//    @Test(priority = 2)
+//    @Description("Edit a customer")
+//    public void editCustomer() throws InterruptedException {
+//
+//        EditCustomer edit_cus = new EditCustomer(driver);
+//        edit_cus.editCustomer();
+//
+//
+//    }
+//
+//    @Test(priority = 3)
+//    @Description("Delete a customer")
+//    public void deleteCustomer() throws InterruptedException {
+//
+//        DeleteCustomer del_cus = new DeleteCustomer(driver);
+//        del_cus.deleteCustomer();
+//
+//
+//    }
 
-        EditCustomer edit_cus = new EditCustomer(driver);
-        edit_cus.editCustomer();
+    @Test(priority = 4)
+    @Description("Add a account")
+    public void addAccount() throws InterruptedException {
+
+        NewAccountAdd new_acc = new NewAccountAdd(driver);
+        new_acc.newAccount();
 
 
     }
 
-    @Test(priority = 3)
-    @Description("Delete a customer")
-    public void deleteCustomer() throws InterruptedException {
+    @Test(priority = 5)
+    @Description("Edit a account")
+    public void editAcc() throws InterruptedException {
 
-        DeleteCustomer del_cus = new DeleteCustomer(driver);
-        del_cus.deleteCustomer();
+        EditAccount edit_acc = new EditAccount(driver);
+        edit_acc.editAccount();
 
 
     }
+
+//    @Test(priority = 6)
+//    @Description("Delete a account")
+//    public void deleteCustomer() throws InterruptedException {
+//
+//        DeleteCustomer del_cus = new DeleteCustomer(driver);
+//        del_cus.deleteCustomer();
+//
+//
+//    }
+//
+//    @Test(priority = 3)
+//    @Description("Delete a customer")
+//    public void deleteCustomer() throws InterruptedException {
+//
+//        DeleteCustomer del_cus = new DeleteCustomer(driver);
+//        del_cus.deleteCustomer();
+//
+//
+//    }
+//
+//    @Test(priority = 3)
+//    @Description("Delete a customer")
+//    public void deleteCustomer() throws InterruptedException {
+//
+//        DeleteCustomer del_cus = new DeleteCustomer(driver);
+//        del_cus.deleteCustomer();
+//
+//
+//    }
+//
+//    @Test(priority = 3)
+//    @Description("Delete a customer")
+//    public void deleteCustomer() throws InterruptedException {
+//
+//        DeleteCustomer del_cus = new DeleteCustomer(driver);
+//        del_cus.deleteCustomer();
+//
+//
+//    }
 
 
     @AfterTest

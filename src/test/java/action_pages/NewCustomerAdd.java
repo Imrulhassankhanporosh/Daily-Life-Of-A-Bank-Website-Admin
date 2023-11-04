@@ -118,7 +118,7 @@ public class NewCustomerAdd extends BasePage {
         System.out.println("New Customer Added.");
 
         C_id = customer_id.getText();
-        System.out.println(C_id);
+        System.out.println("CustomerID : "+ C_id);
 
 
 
