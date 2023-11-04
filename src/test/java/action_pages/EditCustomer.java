@@ -50,27 +50,42 @@ public class EditCustomer extends BasePage{
 
         edit_cus_option_from_dashboard.click();
         Thread.sleep(2000);
+
         //String Cus_ID = "\"" + getCustomerID() + "\"";
         String Cus_ID =getCustomerID();
         System.out.println("Cus ID in Edit : "+Cus_ID);
         cus_id.sendKeys(Cus_ID);
         Thread.sleep(2000);
+
         cus_id_submit_btn.click();
         Thread.sleep(2000);
-        address.sendKeys("Some where in the world");
+
+        address.clear();
+        address.sendKeys("America");
         Thread.sleep(2000);
-        city.sendKeys("XYZ");
+
+        city.clear();
+        city.sendKeys("XYz");
         Thread.sleep(2000);
-        state.sendKeys("ABC");
+
+        state.clear();
+        state.sendKeys("ABc");
         Thread.sleep(2000);
-        pin.sendKeys("102030");
+
+        pin.clear();
+        pin.sendKeys("102060");
         Thread.sleep(2000);
-        mobile_no.sendKeys("01716661616");
+
+        mobile_no.clear();
+        mobile_no.sendKeys("017152455685");
         Thread.sleep(2000);
-        String email_id = "Test" + System.currentTimeMillis() + "@abc.com";
+
+        email.clear();
+        String email_id = "Test" + System.currentTimeMillis() + "@xyz.com";
         Thread.sleep(2000);
         email.sendKeys(email_id);
         Thread.sleep(2000);
+
         submit_btn.click();
         Thread.sleep(2000);
 

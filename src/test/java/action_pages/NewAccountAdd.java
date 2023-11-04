@@ -1,11 +1,14 @@
 package action_pages;
 
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.util.TimeUtils;
+
+import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
 import static action_pages.NewCustomerAdd.getCustomerID;
 
@@ -13,7 +16,9 @@ public class NewAccountAdd extends BasePage{
 
     public static String A_id;
 
-    @FindBy(linkText = "New Account")
+    //@FindBy(linkText = "New Account")
+
+    //@FindBy(xpath = "/html/body/div[3]/div/ul/li[5]/a")
     WebElement new_acc_option_from_dashboard;
     @FindBy(name="cusid")
     WebElement cus_id;
@@ -39,7 +44,12 @@ public class NewAccountAdd extends BasePage{
     }
 
     public void newAccount() throws InterruptedException {
-        new_acc_option_from_dashboard.click();
+
+       // new_acc_option_from_dashboard.click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("New Account")));
+        element.click();
+
         Thread.sleep(2000);
         //String Cus_ID = "\"" + getCustomerID() + "\"";
         String Cus_ID =getCustomerID();

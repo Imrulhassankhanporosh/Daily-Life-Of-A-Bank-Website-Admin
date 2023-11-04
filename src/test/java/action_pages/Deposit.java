@@ -39,7 +39,7 @@ public class Deposit extends BasePage{
         deposit_amount.sendKeys("1500");
         Thread.sleep(2000);
 
-        deposit_desc.sendKeys("deposit amount is 1500");
+        deposit_desc.sendKeys("deposit");
         Thread.sleep(2000);
 
         acc_no_submit_btn.click();

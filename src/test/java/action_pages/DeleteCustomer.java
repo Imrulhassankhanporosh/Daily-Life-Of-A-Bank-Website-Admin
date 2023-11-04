@@ -49,5 +49,19 @@ public class DeleteCustomer extends BasePage{
         Thread.sleep(2000);
 
         System.out.println("Deleted Customer.");
+
+//        //  Alert Case handle
+        try {
+            Alert alert = driver.switchTo().alert();
+            //alert.dismiss();
+            alert.accept();
+        }
+        catch (NoAlertPresentException e){
+            System.out.println("Alert was not present: " + e.getMessage());
+        }
+        Thread.sleep(2000);
+
+//        driver.navigate().back();
+//        Thread.sleep(10000);
     }
 }

@@ -68,27 +68,17 @@ public class Guru99Project {
 //
 //    }
 
-//    @Test(priority = 2)
-//    @Description("Edit a customer")
-//    public void editCustomer() throws InterruptedException {
-//
-//        EditCustomer edit_cus = new EditCustomer(driver);
-//        edit_cus.editCustomer();
-//
-//
-//    }
-//
-//    @Test(priority = 3)
-//    @Description("Delete a customer")
-//    public void deleteCustomer() throws InterruptedException {
-//
-//        DeleteCustomer del_cus = new DeleteCustomer(driver);
-//        del_cus.deleteCustomer();
-//
-//
-//    }
+    @Test(priority = 2)
+    @Description("Edit a customer")
+    public void editCustomer() throws InterruptedException {
 
-    @Test(priority = 4)
+        EditCustomer edit_cus = new EditCustomer(driver);
+        edit_cus.editCustomer();
+
+
+    }
+
+    @Test(priority = 3)
     @Description("Add a account")
     public void addAccount() throws InterruptedException {
 
@@ -98,52 +88,62 @@ public class Guru99Project {
 
     }
 
-//    @Test(priority = 5)
-//    @Description("Edit an account, not working, getting 500.")
-//    public void editAcc() throws InterruptedException {
-//
-//        EditAccount edit_acc = new EditAccount(driver);
-//        edit_acc.editAccount();
-//
-//
-//    }
-//
-//    @Test(priority = 6)
-//    @Description("Delete an account, not working, getting 500.")
-//    public void deleteAccount() throws InterruptedException {
-//
-//        DeleteAccount del_acc = new DeleteAccount(driver);
-//        del_acc.deleteAccount();
-//
-//
-//    }
-//
-//    @Test(priority = 7)
-//    @Description("Deposit in New Account, not working, getting 500.")
-//    public void deposit() throws InterruptedException {
-//
-//        Deposit deposit_acc = new Deposit(driver);
-//        deposit_acc.depositAmount();
-//
-//
-//    }
-//
-//    @Test(priority =8 )
-//    @Description("Withdrawal from New Account.")
-//    public void withdrawal() throws InterruptedException {
-//
-//       Withdrawal withdrawal_acc = new Withdrawal(driver);
-//       withdrawal_acc.withdrawal_amount();
-//
-//
-//    }
+    @Test(priority = 4)
+    @Description("Edit an account, not working, getting 500.")
+    public void editAcc() throws InterruptedException {
 
-    @Test(priority =9 )
+        EditAccount edit_acc = new EditAccount(driver);
+        edit_acc.editAccount();
+
+
+    }
+
+    @Test(priority = 5)
+    @Description("Delete an account, not working, getting 500.")
+    public void deleteAccount() throws InterruptedException {
+
+        DeleteAccount del_acc = new DeleteAccount(driver);
+        del_acc.deleteAccount();
+
+
+    }
+
+    @Test(priority = 6)
+    @Description("Deposit in New Account, not working, getting 500.")
+    public void deposit() throws InterruptedException {
+
+        Deposit deposit_acc = new Deposit(driver);
+        deposit_acc.depositAmount();
+
+
+    }
+
+    @Test(priority =7 )
+    @Description("Withdrawal from New Account.")
+    public void withdrawal() throws InterruptedException {
+
+       Withdrawal withdrawal_acc = new Withdrawal(driver);
+       withdrawal_acc.withdrawal_amount();
+
+
+    }
+
+    @Test(priority =8 )
     @Description("Fund Transfer between two Accounts.")
     public void fundTransfer() throws InterruptedException {
 
        Fund_Transfer fund_transfer = new Fund_Transfer(driver);
        fund_transfer.fundTransfer();
+
+
+    }
+
+    @Test(priority = 9)
+    @Description("Delete a customer, not working")
+    public void deleteCustomer() throws InterruptedException {
+
+        DeleteCustomer del_cus = new DeleteCustomer(driver);
+        del_cus.deleteCustomer();
 
 
     }
