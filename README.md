@@ -16,7 +16,7 @@ I have used a bank website where admins can login and perform necessary responsi
 10. Delete cusotmers.
 11. Logout.
 
-N.B : 
+**N.B** : 
 
 I have implemented the alert handling, dropdown value locate, mouse action, and various locators, and as it was a dummy website,
 so the location of the web elements may vary next time, so I provided a screen recording of my Selenium project running.
