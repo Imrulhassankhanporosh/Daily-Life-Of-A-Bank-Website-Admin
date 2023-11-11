@@ -39,7 +39,8 @@ public class LoginPage extends BasePage {
 
         // Explicitly wait for an element (in this case, wait for the presence of an element with a specific ID)
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.name("btnLogin")));
+        //WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.name("btnLogin")));
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.name("btnLogin")));
 
        // login_btn.click();
         element.click();

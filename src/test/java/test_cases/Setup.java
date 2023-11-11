@@ -32,23 +32,17 @@ public class Setup {
         else {
             System.out.println("FAIL");
         }
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
     }
 
     public void nagivateMethods(){
 
         driver.navigate().to("https://www.facebook.com");
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.navigate().back();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         String URL = driver.getCurrentUrl();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         System.out.println(URL);
         driver.navigate().forward();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.navigate().refresh();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
     public void closeBrowser(){
