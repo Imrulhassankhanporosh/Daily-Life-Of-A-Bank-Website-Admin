@@ -26,7 +26,7 @@ public class Guru99Project {
         driver.manage().deleteAllCookies();
 
         //wait time to find the web elements
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, java.util.concurrent.TimeUnit.SECONDS);
         // to load the page , wait duration
         driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
     }
