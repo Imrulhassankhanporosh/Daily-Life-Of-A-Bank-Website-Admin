@@ -1,4 +1,4 @@
-# Web Automation By Selenium Project_2
+# Daily Life Of A Bank Website Admin
 This is another Selenium project that was created using the page object model (POM), page factory, and running my test cases using TestNG.
 
 I have used a bank website where admins can login and perform necessary responsibilities.
